@@ -1,0 +1,123 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 10px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 519px;
+  min-height: 450px;
+  background-image: none;
+  height: auto;
+  margin: 20px 386px 60px auto;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 10px;
+}
+
+.u-section-1 .u-text-1 {
+  letter-spacing: normal;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: none;
+  margin: 59px 30px 0 164px;
+  color: grey;
+}
+
+.u-section-1 .u-image-1 {
+  width: 104px;
+  height: 93px;
+  margin: -80px auto 0 30px;
+}
+
+.u-section-1 .u-text-2 {
+  line-height: 2;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(17, 17, 17) !important;
+  margin: 41px auto 0 30px;
+}
+
+.u-section-1 .u-list-icon-1 {
+  color: rgb(17, 17, 17) !important;
+}
+
+.u-section-1 .u-list-icon-2 {
+  color: rgb(17, 17, 17) !important;
+}
+
+.u-section-1 .u-list-icon-3 {
+  color: rgb(17, 17, 17) !important;
+}
+
+.u-section-1 .u-list-icon-4 {
+  color: rgb(17, 17, 17) !important;
+}
+
+.u-section-1 .u-list-icon-5 {
+  color: rgb(17, 17, 17) !important;
+}
+
+.u-section-1 .u-list-icon-6 {
+  color: rgb(17, 17, 17) !important;
+}
+
+.u-section-1 .u-rotation-parent-1 {
+  width: 176px;
+  height: 153px;
+  margin: 18px 49px 0 auto;
+}
+
+.u-section-1 .u-shape-1 {
+  width: 153px;
+  height: 176px;
+}
+
+.u-section-1 .u-shape-2 {
+  width: 233px;
+  height: 141px;
+  margin: -141px auto 0 41px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-shape-1 {
+    margin: -245px 14px 0 auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-group-1 {
+    margin-right: 201px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-group-1 {
+    margin-right: 21px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-group-1 {
+    width: 340px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-bottom: 20px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 2.25rem;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+}

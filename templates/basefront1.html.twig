@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href={{ asset ("41.jfif")}} type="image/png">
+	<title>CV</title>
+	<link href={{asset("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css")}} rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<!-- main css -->
+	<link rel="stylesheet" href={{asset("front.css")}}>
+    <script src={{asset("https://kit.fontawesome.com/f8657305ae.js")}} crossorigin="anonymous"></script>
+	
+	
+	
+	
+	
+	
+	
+</head>
+
+<body>
+
+    <!-- navigation bar --> 
+
+    <nav>
+
+        <!-- left bar --> 
+
+        <div class="nav-left">
+            <img src={{asset("133.jpg")}} class="logo"  >
+            <ul>
+                
+                <li><a  href={{asset("/front")}}>Profil</a></li>
+				<li ><a  href={{asset("/etudes")}}>Etudes</a></li>
+				<li ><a  href={{asset("/experience")}}>Experience et projets</a></li>
+				<li ><a  href={{asset("contact.html")}}>contact</a></li>
+                <li ><a  href={{asset("contact.html")}}></a></li>
+                <li ><a  href={{asset("contact.html")}}></a></li>
+                <li ><a  href={{asset("contact.html")}}></a></li>
+                
+            </ul>
+            <div class="not">
+            </div>
+            <div class="ins"></div>
+            <div class="vids"></div>
+<div class="nav-right">
+       
+        <div class="user online" onclick="settingstoggle()">
+            <img src={{asset("17.jpg")}} width="60" height="100">
+        </div>
+</div> 
+    </div>
+
+    <!-- right bar --> 
+
+    
+
+<!-- leblaka taa deconnexion --> 
+
+<div class="settings">
+    <div id="dark" >
+        <span></span>
+    </div>
+    
+    <div  class="sttings">
+    <div class="userprof">
+        <img src={{asset("78.png")}} >
+        <div>
+            <p><font color ="grey">change mode</font></p>
+            
+        </div>
+</div>
+
+</div>
+
+
+    </nav>
+
+
+
+
+<!-- ilwesstt --> 
+
+    <div class="container">
+    <div>
+   
+    {%  block body  %}
+    {% endblock %}
+
+
+                </div>
+            </div>
+            
+        </div>
+
+    <!-- ilwesst --> 
+
+        
+    
+ <script src={{asset("front.js")}}></script> 
+ <script src={{asset("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js")}} integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
