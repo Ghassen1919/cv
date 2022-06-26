@@ -9,18 +9,19 @@
 /*utiliser des variables pour modifier le theme*/
 
 :root{/**/
-    --body-color:#efefef;
-    --nav-color:#16407e ;
-
-    --bg-color:#fff;
-    --p-color: black
-
-}                                              /*tabdil itheme */
-.darkthe{/**/
     --body-color:#0a0a0a;
     --nav-color:rgb(0, 0, 0);
     --bg-color:#000;
-    --p-color: white
+    --p-color: white;
+
+}                                              /*tabdil itheme */
+
+.darkthe{/**/
+    --body-color:#efefef;
+    --nav-color:#90a6b3 ;
+
+    --bg-color:#fff;
+    --p-color: black;
 
 
 }
@@ -312,7 +313,7 @@ nav{
       position: absolute;
       top: 20px;
       right: 20%;
-      background: #ccc;
+      background: rgb(24, 23, 23);
       width: 45px;
       border-radius: 15px;
       padding: 2px 3px;
@@ -323,13 +324,13 @@ nav{
   #dark span{
       width: 18px;
       height: 18px;
-      background: #fff;
+      background: rgb(87, 86, 86);
       border-radius: 50%;
       display: inline-block;                      /*irak7ou 9arss tabdil itheme yet7arek*/
   }
   #dark.dark1{/**/
       padding-left: 23px;/**/
-      background: #000;/**/
+      background: rgb(41, 40, 40);/**/
   }
   /* traitement leblayek taa notif we message we vids*/
   .not
