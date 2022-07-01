@@ -1,0 +1,461 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: "popins",sans-serif;
+    box-sizing: border-box;
+}
+
+/*utiliser des variables pour modifier le theme*/
+
+:root{/**/
+    --body-color:#0a0a0a;
+    --nav-color:#080a20;
+    --bg-color:#000;
+    --p-color: white;
+    --a-color: rgb(50, 42, 100) ;
+}                                              /*tabdil itheme */
+
+.darkthe{/**/
+    --body-color:#efefef;
+    --nav-color:#c1c2ef ;
+
+    --bg-color:#fff;
+    --p-color: black;
+    --a-color :white;
+
+
+}
+
+
+body{
+    background: var(--body-color);/**/
+    transition: background 0.3s;/**/
+
+    
+}
+.logo{
+    margin-right: 50px;
+    width: 100px;
+}
+
+
+/*traiter navigation bar*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--nav-color);/**/
+    padding: 1px 5%;
+    padding-bottom: 1px ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+
+/*traiter left navigation bar*/
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-top: 10px;
+    
+    
+}
+.nav-left ul{
+    float: right;
+    margin-right: 350px;
+    margin-left: 200px;
+    
+}
+
+.nav-left ul li {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    
+    
+   
+    
+   
+}
+
+.nav-left ul li a{
+    width: 28 px;
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--p-color);
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
+}
+.nav-left ul li a:hover{
+    color: var(--a-color);
+    
+}
+.nav-left ul li img{
+    width: 28 px;
+    margin: 0 15px;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+#check{
+    display: none;
+
+}
+
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+
+    }
+    .nav-left ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:var(--nav-color) ;
+        top: 100px;
+        left: -160%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    #check:checked ~ ul{
+        left: -55.5%;
+    }
+    .nav-left ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+     .logo{
+    margin-right: 70px;
+    margin-left: 45px;
+    width: 100px;
+    }
+    
+   
+}
+/*traiter right navigation bar*/
+
+.nav-right{
+    display: flex;
+    align-items: center;
+
+}
+.user img{
+    border-radius: 50%;
+    cursor: pointer; 
+    padding: 20px 5px ;
+}
+.searchbox{
+    background: #efefef;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding : 1px 10px;
+
+
+}
+.searchbox input{
+    width: 100%;
+    background: transparent;
+    padding : 10 px;
+    outline : none;
+    border :0;
+
+}
+.online {
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border :1px solid #fff;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+     
+}
+
+/*traiter ilwest*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 13px 5%;
+    
+    
+}
+
+
+
+
+/*traiter left side general*/
+
+.left{
+  
+   
+    flex-basis: 25%;
+    position: sticky;
+    top : 70px;
+    align-self: flex-start;
+    height: 87vh;
+    margin-top: 2px;
+    
+   
+   
+}
+
+ /*traiter right side general*/
+
+.right{
+    
+    
+    flex-basis: 25%;
+    top :70px;
+    position: sticky;
+    align-self: flex-start;
+    height: 87vh;
+    background: var(--bg-color);/**/
+   
+   
+}
+
+/*traiter ilwestt general*/
+
+.main{
+  
+    flex-basis: 47%;
+
+}
+
+
+/*traiter left side specific*/
+
+.links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+    
+}
+.links img{
+    width: 25px;
+    padding-right: 10px;
+}
+.links a:last-child{
+    color: darkblue;
+
+}
+.links a:last-child:hover{
+    color:lightsalmon;
+}
+.links{
+    border-bottom: 2px solid slateblue;
+}
+.shortcut a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;   
+
+}
+.shortcut img{
+    width: 50px;
+    padding-right: 10px;
+}
+.shortcut p{
+    margin: 25px 0;
+    color: #626262;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+
+    /*traiter leblaka taa deconnexion*/
+
+    .settings
+    {
+        position: absolute;
+        width: 90%;
+        max-width: 280px;
+        height: 100px; 
+        background-color: var(--bg-color) ;
+        box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+        border-radius: 4px;
+        overflow: hidden;
+        top:100%;
+        right: 5%;
+        max-height: 0;/**/
+        transition: max-height 0.3s;/**/
+
+     
+/*ilkolhom ital3ou we ihabtou leblaka*/
+  }
+  .settingsheight{/**/
+      max-height: 500px;/**/
+  }
+  .userprof a{
+      text-decoration: none;
+      color: #1876f2;
+      font-size: 12px;
+  }
+  .userprof p{
+      color: black;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .sttings{
+      padding: 20px;
+      padding-bottom: 100%;
+      
+  }
+  .settings hr{
+      border: 0;
+      height: 1px;
+      background: #9a9a9a;
+      margin: 1px;
+  }
+  .userprof{
+      margin-bottom:  10px;
+      display: -webkit-inline-box;
+      margin-top: -15px;
+     
+  }
+  .userprof img{
+    width: 50px;
+    padding: 7px;
+  }
+  .set{
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+
+  }
+  .set .setic{
+      width: 30px;
+      margin-right: 10px;
+      border-radius: 50%;
+  }
+  .set  a{
+      text-decoration: none;
+      color: #626262;
+  }
+
+  /*tarki7 btn tabdil theme*/
+
+  #dark{
+      position: absolute;
+      top: 24px;
+      right: 20%;
+      background: rgb(24, 23, 23);
+      width: 45px;
+      border-radius: 15px;
+      padding: 2px 3px;
+      cursor: pointer;
+      display: inline-flex;
+      transition: padding-left 0.3s, background 0.3s;/**/
+  }
+  #dark span{
+      width: 18px;
+      height: 18px;
+      background: rgb(87, 86, 86);
+      border-radius: 50%;
+      display: inline-block;                      /*irak7ou 9arss tabdil itheme yet7arek*/
+  }
+  #dark.dark1{/**/
+      padding-left: 23px;/**/
+      background: rgb(41, 40, 40);/**/
+  }
+  /* traitement leblayek taa notif we message we vids*/
+  .not
+  {
+      position: absolute;
+      width: 90%;
+      max-width: 250px;
+      height: 300px;
+      background-color: var(--bg-color) ;
+      box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+      border-radius: 4px;
+      overflow: hidden;
+      top:100%;
+      right: 70%;
+      max-height: 0;/**/
+      transition: max-height 0.3s;/**/
+
+     
+/*ilkolhom ital3ou we ihabtou leblaka*/
+  }
+  .notheight{/**/
+      max-height: 500px;/**/
+  }
+  .ins {
+    position: absolute;
+    width: 90%;
+    max-width: 250px;
+    height: 300px;
+    background-color: var(--bg-color) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top:100%;
+    right: 65%;
+    max-height: 0;/**/
+    transition: max-height 0.3s;/**/
+
+  }
+  .insheight{/**/
+    max-height: 500px;/**/
+  }
+  .vids {
+    position: absolute;
+    width: 90%;
+    max-width: 250px;
+    height: 300px;
+    background-color: var(--bg-color) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top:100%;
+    right: 60%;
+    max-height: 0;/**/
+    transition: max-height 0.3s;/**/
+
+  }
+  .vidsheight{/**/
+    max-height: 500px;/**/
+  }
+  .foot p{
+    color: #626262;
+    font-size: 10px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+
+}
+@import "~bootstrap/scss/bootstrap"

@@ -1,0 +1,71 @@
+{% extends 'basefront1.html.twig' %}
+
+
+
+{% block body %}<link rel="stylesheet" href={{asset("nicepagey.css")}} media="screen">
+<link rel="stylesheet" href={{asset("Accueily.css")}} media="screen">
+    <script class="u-script" type="text/javascript" src={{asset("jqueryy.js")}} defer=""></script>
+    <script class="u-script" type="text/javascript" src={{asset("nicepagey.js")}} defer=""></script>
+    <center><h1 > Mes Etudes </h1></center>
+
+    
+        {% for etude in etudes %}
+          <body  class="u-body u-xl-mode">
+          
+           <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="carousel_7104">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-align-left u-container-style u-group u-white u-group-1">
+              <div class="u-container-layout u-container-layout-1">
+                <h4 class="u-custom-font u-font-raleway u-text u-text-1">{{ etude.emplacement }}</h4>
+                <img class="u-image u-image-round u-radius-10 u-image-1" src="{{asset('uploads/images/products/' ~ etude.image) }}" alt="" data-image-width="1280" data-image-height="853">
+                <ul class="u-custom-list u-spacing-10 u-text u-text-default u-text-2">
+                  <li>
+                    <div class="u-list-icon u-text-palette-1-base u-list-icon-1">
+                      <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">●</div>
+                    </div>date de début :  {{ etude.dateDeb ? etude.dateDeb|date('Y-m-d') : '' }}<br>
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-1-base u-list-icon-2">
+                      <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">●</div>
+                    </div> date de fin :  {{ etude.dateFin ? etude.dateFin|date('Y-m-d') : '' }} <br>
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-1-base u-list-icon-3">
+                      <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">●</div>
+                    </div>{{etude.diplome}}<br>
+                  </li>
+                  <li>
+                    
+                </ul>
+                <a href="{{ path('app_etudes_edit', {'id': etude.id}) }}" class="u-btn u-btn-round u-button-style u-grey-50 u-hover-palette-1-light-1 u-radius-50 u-text-palette-1-base u-btn-1">Edit</a>
+                   
+                <div class="u-rotation-parent u-rotation-parent-1">
+                  <div class="u-hidden-sm u-hidden-xs u-rotate-270 u-shape u-shape-svg u-text-palette-1-dark-1 u-shape-1">
+                    <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a03"></use></svg>
+                    <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-8a03"><path d="M159.1,1c-0.9-1-2.3-1.2-3.5-0.7L1.8,72.6c-1.2,0.6-2,1.9-1.8,3.3c0.2,1.4,1.2,2.5,2.6,2.7l69,11.8l7.9,66.9
+        c0.2,1.4,1.2,2.5,2.6,2.7c0.2,0,0.4,0,0.5,0c1.2,0,2.2-0.7,2.8-1.8L159.8,4.4C160.3,3.4,160,1.9,159.1,1z"></path></svg>
+                  </div>
+                </div>
+                <div class="u-align-center u-flip-vertical u-hidden-sm u-hidden-xs u-shape u-shape-svg u-text-palette-1-dark-1 u-shape-2">
+                  <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9dd9"></use></svg>
+                  <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-9dd9"><path d="M159.1,1c-0.9-1-2.3-1.2-3.5-0.7L1.8,72.6c-1.2,0.6-2,1.9-1.8,3.3c0.2,1.4,1.2,2.5,2.6,2.7l69,11.8l7.9,66.9
+        c0.2,1.4,1.2,2.5,2.6,2.7c0.2,0,0.4,0,0.5,0c1.2,0,2.2-0.7,2.8-1.8L159.8,4.4C160.3,3.4,160,1.9,159.1,1z"></path></svg>
+                </div>
+               {{ include('etudes/_delete_form.html.twig') }}
+              </div>
+            </div>
+          </div>
+        </section>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        <center><a href="{{ path('app_etudes_new') }}" class="u-btn u-btn-round u-button-style u-grey-50 u-hover-palette-1-light-1 u-radius-50 u-text-palette-1-base u-btn-1">Create new</a>
+         </center>
+        </tbody>
+        
+    </table>
+
+   
+{% endblock %}

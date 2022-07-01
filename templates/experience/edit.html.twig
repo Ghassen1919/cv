@@ -1,0 +1,42 @@
+{% extends 'basefront1.html.twig' %}
+
+{% block title %}Modifier{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href={{asset("nicepagey.css")}} media="screen">
+<link rel="stylesheet" href={{asset("Accueily.css")}} media="screen">
+    <script class="u-script" type="text/javascript" src={{asset("jqueryy.js")}} defer=""></script>
+    <script class="u-script" type="text/javascript" src={{asset("nicepagey.js")}} defer=""></script>
+
+
+    <center><h1>Modifier</h1></center>
+    <body  class="u-body u-xl-mode">
+          
+           <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="carousel_7104">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-align-left u-container-style u-group u-white u-group-1">
+              <div class="u-container-layout u-container-layout-1">
+
+    {{ include('experience/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <br> <br>
+    <button class="btn" style="background-color:#42494963;border-color: black;color: white"><a href="{{ path('app_experience_index') }}">back to list</a></button>
+
+    
+    <div class="u-rotation-parent u-rotation-parent-1">
+                  <div class="u-hidden-sm u-hidden-xs u-rotate-270 u-shape u-shape-svg u-text-palette-1-dark-1 u-shape-1">
+                    <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8a03"></use></svg>
+                    <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-8a03"><path d="M159.1,1c-0.9-1-2.3-1.2-3.5-0.7L1.8,72.6c-1.2,0.6-2,1.9-1.8,3.3c0.2,1.4,1.2,2.5,2.6,2.7l69,11.8l7.9,66.9
+        c0.2,1.4,1.2,2.5,2.6,2.7c0.2,0,0.4,0,0.5,0c1.2,0,2.2-0.7,2.8-1.8L159.8,4.4C160.3,3.4,160,1.9,159.1,1z"></path></svg>
+                  </div>
+                </div>
+                <div class="u-align-center u-flip-vertical u-hidden-sm u-hidden-xs u-shape u-shape-svg u-text-palette-1-dark-1 u-shape-2">
+                  <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9dd9"></use></svg>
+                  <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-9dd9"><path d="M159.1,1c-0.9-1-2.3-1.2-3.5-0.7L1.8,72.6c-1.2,0.6-2,1.9-1.8,3.3c0.2,1.4,1.2,2.5,2.6,2.7l69,11.8l7.9,66.9
+        c0.2,1.4,1.2,2.5,2.6,2.7c0.2,0,0.4,0,0.5,0c1.2,0,2.2-0.7,2.8-1.8L159.8,4.4C160.3,3.4,160,1.9,159.1,1z"></path></svg>
+                </div>
+          </div>
+          </div>
+          </div>
+      </div>
+{% endblock %}
